@@ -5,3 +5,5 @@ Save location in text PHP via form
 - Download or clone
 - visit index.php file
 - Done
+
+*Make sure your website is HTTPS
