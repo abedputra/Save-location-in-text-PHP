@@ -3,28 +3,26 @@
 <head>
 	<!-- Basic -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Geolocation</title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
+	<title>Save Geolocation | abedputra.com</title>
 	
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
     <h3>Form</h3>
-   <script type="text/javascript">
-	
+	<script type="text/javascript">
+	//Check Geolocation
 	if (navigator.geolocation) {
 	    navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);
 	} else {
 	    alert("Your browser or device doesn't support Geolocation");
 	}
-	
+
 	// If we have a successful location update
 	function onGeoSuccess(position) {
 	document.getElementById("latlong").value = position.coords.latitude + ", " + position.coords.longitude;
 	}
-	
+
 	// If something has gone wrong with the geolocation request
 	function onGeoError(error) {
 	switch(error.code) {
@@ -42,7 +40,7 @@
 	break;
 	}
 	}
-</script>
+	</script>
 <form action="sent.php" method="POST">
     <div id="divSample" class="hideClass">
         Name:
