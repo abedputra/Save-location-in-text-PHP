@@ -11,6 +11,7 @@ $company = $_POST['company'];
 $pnumber = $_POST['pnumber'];
 $latlong = $_POST['latlong'];
 
+//check if isset submit or not
 if(isset($_POST['submit'])){
     //content
     $write_content = "Name: ". $name ."\nLast Name: ". $lastname ."\nage: " . $age . "\nCompany: ". $company . "\nPhone Numbers: ". $pnumber . "\nLang-Long :". $latlong . "\n\n";
@@ -29,7 +30,7 @@ if(isset($_POST['submit'])){
 ?>
 <html>
 <head>
-<title>Geolocation</title>
+<title>Result Geolocation</title>
 </head>
 
 <body>
